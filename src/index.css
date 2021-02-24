@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Mulish', sans-serif  !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.nav-link:hover{
+  color: white !important;
+  background-color: rgb(193, 87, 197);
+  border-radius: 5px;
+  padding-left: 3px;
+}
+.menu_active{
+  /* text-decoration:  underline black !important;
+  text-underline-offset: 13px; */
+  border-bottom: 1px solid rgb(252, 11, 191);
+}
+.btn-get-started{
+  border-radius: 18px;
+  border: 1px solid blue;
+  text-decoration: none;
+  padding: 8px 10px 8px 10px;
+  font-weight: 400 ;
+}
+.btn-get-started:hover{
+  color: white;
+  background-color: rgb(101, 101, 255);
+  border:1px solid rgb(38, 0, 255);
+}
+.tope_header{
+  margin-top: 40px;
+}
+.brand-name{
+  color:blue;
+}
+.animated{
+  animation-name: move ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin-bottom: 60px;
+}
+@keyframes move{
+  0%{
+    top:0px;
+  }50%{
+    top:10px;
+  }100%{
+    top:0px;
+  }
 }
