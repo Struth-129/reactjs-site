@@ -15,7 +15,7 @@ const Example = (props) => {
       <div className="col-md-10 col-10 mx-auto">
       <nav className="navbar navbar-expand-lg navbar-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">ReactJS</a>
+    <a className="navbar-brand " disabled href="/">ReactJS</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -28,12 +28,12 @@ const Example = (props) => {
         </li>
         <li className="nav-item">
           <NavLink  activeClassName="menu_active"
-          exact to="skills"
+          exact to="/skills"
           className="nav-link active" aria-current="page">Skills</NavLink>
         </li>
         <li className="nav-item">
           <NavLink  activeClassName="menu_active"
-          exact to="about"
+          exact to="/about"
           className="nav-link active" aria-current="page">About</NavLink>
         </li>
         <li className="nav-item">

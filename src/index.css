@@ -4,6 +4,8 @@ body {
   font-family: 'Mulish', sans-serif  !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  height: 100vh !important;
 }
 
 code {
@@ -30,7 +32,7 @@ code {
 }
 .btn-get-started:hover{
   color: white;
-  background-color: rgb(101, 101, 255);
+  background-color: rgb(11, 11, 37);
   border:1px solid rgb(38, 0, 255);
 }
 .tope_header{
@@ -46,6 +48,13 @@ code {
   position: relative;
   margin-bottom: 60px;
 }
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
 @keyframes move{
   0%{
     top:0px;
@@ -54,4 +63,20 @@ code {
   }100%{
     top:0px;
   }
+}
+.hh{
+  overflow: hidden;
+  height: 250px;
+}
+.hove{
+  transition: transform 0.2s;
+  height: 180px;
+}
+.hove:hover{
+  filter: blur(0.8px);
+  transform: scale(1.1);
+}
+footer{
+  position: absolute;
+  bottom: 0 ;
 }
